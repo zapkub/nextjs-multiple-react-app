@@ -1,0 +1,16 @@
+{
+  "name": "nextjs-multiple-react-tree",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "next": "^5.1.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "expose-loader": "^0.7.5",
+    "stmux": "^1.4.19"
+  }
+}
