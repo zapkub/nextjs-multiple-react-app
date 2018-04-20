@@ -21,7 +21,8 @@ module.exports = {
     'jamplay-context': 'window.__JAMPLAY_GLOBAL_CONTEXT__',
     'react': 'window.React',
     'react-dom': 'window.ReactDOM',
-    'next/router': 'window.router'
+    'next/router': 'window.router',
+    'styled-components': 'window.StyledComponents'
 
   }
 }

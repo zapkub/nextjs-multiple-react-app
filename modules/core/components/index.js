@@ -1,6 +1,11 @@
 
 import React from 'react'
+import styled from 'styled-components'
 
+const Container = styled.div`
+  color: ${props => props.tick % 2 ? 'red' : 'green'};
+
+`
 export default class Core extends React.Component {
   constructor (props) {
     super(props)
@@ -17,11 +22,11 @@ export default class Core extends React.Component {
   }
   render () {
     return (
-      <div>
+      <Container tick={this.state.tick} >
         {'hi, ' + this.props.url.query.value}
         <br />
         {'counting from localhost:3001 >>> ' + this.state.tick}
-      </div>
+      </Container>
     )
   }
 }

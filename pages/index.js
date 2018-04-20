@@ -1,5 +1,10 @@
 import React from 'react'
 import fragment from '../lib/fragment'
+import styled from 'styled-components'
+
+const Container = styled.div`
+  color: blue;
+`
 
 const CoreFragment = fragment('http://localhost:3001')
 export default class IndexPage extends React.Component {
@@ -26,11 +31,11 @@ export default class IndexPage extends React.Component {
   }
   render () {
     return (
-      <div>
+      <Container>
         {'Counting from main Render service >> ' + this.state.tick}
 
         <CoreFragment {...this.props.coreFragmentProps} />
-      </div>
+      </Container>
     )
   }
 }

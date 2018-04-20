@@ -1,0 +1,15 @@
+{
+  "presets": [
+    "es2015",
+    "next/babel"
+  ],
+  "sourceMaps": true,
+  "plugins": [
+    [
+      "styled-components",
+      {
+        "ssr": true
+      }
+    ]
+  ]
+}

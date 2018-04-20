@@ -4,5 +4,9 @@
     "react"
   ],
   "sourceMaps": true,
-  "plugins": [ ]
+  "plugins": [[
+    "babel-plugin-styled-components", {
+      "ssr": true
+    }
+  ]]
 }
